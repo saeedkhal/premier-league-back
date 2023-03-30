@@ -60,9 +60,9 @@ exports.eventsController = async (req, res) =>{
         })
         
       } catch (err) {
-        res.status(200).json({
-            status:'success',
-            body:'bong'
+        res.status(500).json({
+            status:'fail',
+            message:err
         })
       }
 
